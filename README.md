@@ -14,8 +14,13 @@ Yifan Yao 1, 2, Jiuqing Dong 2, Wenjun Yu 1, and Yongbin Gao 1,*
 The code and our model will be released in two weeks.
 
 # Install
-Clone repo and install requirements.txt in a Python>=3.6.0 environment, including PyTorch>=1.5.
+Clone repo and install related library in a Python>=3.6.0 environment, including PyTorch>=1.5.
 
-# Train
+# Training
+python main.py --data_dir dataPath --num_epoch 100 --batch_size 2 --dataset spinal --phase train
 
-# Test
+# Testing and visualization
+python main.py --resume weightPath --data_dir dataPath --dataset spinal  --phase test
+
+# Evaluation and result scatter plot
+python main.py --resume weightPath --data_dir dataPath --dataset spinal  --phase eval
