@@ -24,3 +24,6 @@ python main.py --resume weightPath --data_dir dataPath --dataset spinal  --phase
 
 # Evaluation and result scatter plot
 python main.py --resume weightPath --data_dir dataPath --dataset spinal  --phase eval
+
+# Note
+if you have any problems, please contact us.
